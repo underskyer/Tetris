@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Тетрис.Алгоритмы</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ОсновнойЦикл.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CoreWf" Version="1.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <XamlAppDef Include="ОсновнойЦикл.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </XamlAppDef>
+  </ItemGroup>
+
+</Project>
